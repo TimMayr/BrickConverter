@@ -22,12 +22,12 @@ Install Dependencies:
 * colorama (pip install colorama)
 * requests (pip install requests)
 
-## Also Needed
+### Also Needed
 
 This program gathers its data using [Rebrickable](https://rebrickable.com/home/). To use it you will need to create a
 Rebrickable Account, and generate an [API Key](https://rebrickable.com/api/).
 
-## Run the Program:
+### Run the Program:
 
 Execute the main.py in the command line using python.
 
