@@ -1,6 +1,7 @@
 # LDrawSTLConvert
 
 ## Introduction
+
 LDrawSTLConvert is a versatile program designed to facilitate the conversion of LEGO bricks to
 STL files using [LDView](https://tcobbs.github.io/ldview/) and the [LDraw Parts Library](https://www.ldraw.org). Without
 those amazing Resources, this would not have been possible. It
@@ -15,7 +16,7 @@ handling part lists exported from Stud.io.
 
 ## Usage
 
-Install Dependencies:
+### Install Dependencies:
 
 * [Python 3.12](https://www.python.org/downloads/release/python-3122/)
 * [LDraw AIO-Installer](https://www.ldraw.org/article/104.html#:~:text=Automated%20installation%20(Recommended))
