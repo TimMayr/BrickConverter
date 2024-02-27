@@ -107,7 +107,7 @@ def generatePart(name, ldrawName, location):
 def generateStl(name, location):
     if not os.path.exists(os.path.join(outputPath, location, name + ".stl")):
         subprocess.run(f'"{ldrawPath}" "{os.path.join(outputPath, location, name + ".ldr")}" '
-                       f'-ExportFile="{os.path.join(outputPath, location, name + ".stl")}"')
+                       f'-ExportFile="{os.path.join(outputPath, location, name + ".stl")}"', shell=True)
 
 
 def generateLdr(name, ldrawName, location):
@@ -173,6 +173,11 @@ def getPartsFromList(partList):
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
+    if not os.path.exists("finder.config"):
+        config["General"] = {"ldrawpath": "", "rebrickable_api_key": ""}
+        with open('finder.config', 'w') as configfile:
+            config.write(configfile)
+
     config.read("finder.config")
     if not config["General"]["ldrawpath"]:
         currentLdrawPath = input("Enter Path to LDView executable: ")
