@@ -205,4 +205,4 @@ cython_debug/
 #.idea/
 
 generated/
-.idea/
+finder.config

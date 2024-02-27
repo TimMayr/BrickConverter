@@ -9,7 +9,7 @@ import requests
 from colorama import Fore, Style
 
 ldrawPath = ""
-outputPath = os.getcwd() + "\\generated\\"
+outputPath = os.path.join(os.getcwd(), "generated")
 rebrickableAPIKey = ""
 rebrickableBaseURL = "https://rebrickable.com/api/v3/"
 
